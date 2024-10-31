@@ -1,0 +1,294 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     width: 100%;
+     height: 100vh;
+}
+nav{
+     background-color: #7676ff;
+     box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+@font-face {
+     font-family: 'John';
+     src: url(Assets/Fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+     font-family: 'Open-Sans';
+     src: url(Assets/Fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+@media only screen and (max-width: 992px) {
+     .precious{
+          font-size: 3rem !important;
+     }
+     /* .book{
+          width: 100% !important;
+     } */
+     .video{
+          width: 100% !important;
+     }
+     .leaf{
+          width: 100% !important;
+     }
+     .card-food-1{
+          width: 100% !important;
+     }
+     .fresh{
+          width: 100% !important;
+     }
+     .Roast{
+          width: 100% !important;
+     }
+     .chef{
+          width: 100% !important;
+     }
+     .chef-des{
+          width: 92% !important;
+     }
+     .reserve{
+          width: 88% !important;
+     }
+     .Latest{
+          width: 90% !important;
+     }
+     .Huge{
+          width: 100% !important;
+     }
+}
+@media only screen and (max-width: 768px) {
+     .reserve{
+          width: 82% !important;
+     }
+     .precious{
+          font-size: 2rem !important;
+     }
+     
+     .replenish{
+          font-size: 1.4rem !important;
+     }
+     .foot-ul>li{
+          margin-top: 2% !important;
+     }
+}
+@media only screen and (max-width: 376px) {
+     .MR{
+          width: 60%!important;
+          padding: 0% !important;
+     }
+}
+@media only screen and (max-width: 576px) {
+     .reserve{
+          width: 78% !important;
+     }
+     .trend{
+          font-size: 1rem !important;
+     }
+     .precious{
+          font-size: 1.2rem !important;
+     }
+     .Delicious{
+          width: 90% !important;
+     }
+}
+.nav-link:hover{
+     color: white;
+}
+.nav-link{
+     font-family: 'Open-Sans';
+}
+.dropdownmenu ul, .dropdownmenu li{
+     margin: 0;
+     padding: 0;
+}
+.dropdownmenu ul{
+     list-style: none;
+     width: 100%;
+}
+.dropdownmenu li{
+     float: left;
+     position: relative;
+     width: auto;
+}
+.dropdownmenu a{
+     color: #2f2d4e;
+     display: block;
+     font-family: 'Open-Sans';
+     text-align: center;
+     text-decoration: none;
+     transition: all 0.25s ease;
+}
+#submenu{
+     left: 0;
+     position: absolute;
+     opacity: 0;
+     top: 35px;
+     visibility: hidden;
+     background-color: white;
+     z-index: 1;
+     width: 100%;
+}
+li:hover #submenu{
+     opacity: 1;
+     top: 175%;
+     visibility: visible;
+     transition: top .7s;
+     width: 430%;
+}
+li:not(:hover) #submenu{
+     top: 100%;
+     width: 430%;
+     transition: .7s;
+}
+#submenu>li{
+     float: left;
+     width: 100%;
+}
+#submenu{
+     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.4);
+}
+#submenu>li>a{
+     float: left;
+     width: 100%;
+}
+#submenu>li>a:hover{
+     background: #e22104;
+     color: white;
+     transition: .7s;
+}
+.book:hover{
+     background-color: red !important;
+     transition: .6s;
+}
+.book:not(:hover){
+     background-color: #E22104 !important;
+     transition: .6s;
+}
+.video:hover{
+     color: rgb(69, 129, 240) !important;
+     transition: .7s;
+}
+.icon:hover{
+     color: red !important;
+     transition: .7s;
+}
+.icon:not(:hover){
+     color: #2f2d4e !important;
+     transition: .7s;
+}
+.card-food:hover{
+     background-color: white !important;
+     transition: .4s !important;
+}
+.card:hover .card-food-body{
+     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.1);
+     transition: .7s;
+}
+.card-food:not(:hover){
+     background-color: white !important;
+     transition: .6s !important;
+}
+.card:not(:hover) .card-food-body{
+     box-shadow: 3px 0 7px rgba(0, 0, 0, 0.1);
+     transition: .7s;
+}
+.Roast:hover{
+     background-color: white !important;
+     box-shadow: 0px 10px 20px 0px rgba(8,6,89,0.1);
+     transition: .6s;
+}
+.Roast:not(:hover){
+     background-color: #FFF8F7 !important;
+     box-shadow: none !important;
+     transition: .6s !important;
+}
+.fries{
+     background-image: url(Assets/Images/9th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 15.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     margin-top: 10% !important;
+}
+.bgblack{
+     padding-top: 10%;
+     padding-bottom: 10%;
+}
+.chef-1{
+     background-image: url(Assets/Images/9th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 16.webp);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     overflow: hidden;
+}
+.chef-2{
+     background-image: url(Assets/Images/9th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 17.webp);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     overflow: hidden;
+}
+.chef-3{
+     background-image: url(Assets/Images/9th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 18.webp);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+     overflow: hidden;
+}
+.black{
+     background-color: rgba(2, 1, 15, 0.5);
+     transform: translateY(-100%);
+}
+.chef:hover .black{
+     transform: translateY(0%);
+     transition: 1s;
+}
+.chef:not(:hover) .black{
+     transform: translateY(-100%);
+     transition: 1s;
+}
+.icons:hover{
+     color: #E22104 !important;
+     transition: .5s;
+}
+.icons:not(:hover){
+     color: #fff !important;
+     transition: .5s;
+}
+.table-bg{
+     background-image: url(Assets/Images/9th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 19.webp);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+}
+.table-black{
+     background-color: rgba(2,1,15,0.5);
+}
+.table-inp:focus{
+     outline: none;
+}
+.foot-ul>li{
+     margin-top: 10%;
+}
+.foot-ul>li>a{
+     font-family: 'Open-Sans';
+}
+.foot-ul>li>a:hover{
+     color: #E22104 !important;
+}
+footer input:focus{
+     outline: none;
+}
+.foot-icon:hover{
+     background-color: #E22104 !important;
+     transition: .5s;
+}
+.foot-icon:not(:hover){
+     background-color: #2F2D4E !important;
+     transition: .5s;
+}
